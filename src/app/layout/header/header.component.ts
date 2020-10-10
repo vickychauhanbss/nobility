@@ -12,4 +12,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll() {
+    let el = document.getElementById('option-home');
+    console.log(el);
+      if(el){
+        el.scrollIntoView({behavior:"smooth"});
+    }
+  }
 }
