@@ -1,0 +1,67 @@
+.common-section{
+    margin-top: 65px;
+}
+.img-below {
+    margin-top: 85px;
+}
+.inner-content {
+    margin-top: 30px;
+}
+.inner-content p {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 400;
+}
+.link-simple {
+    font-size: 28px;
+    line-height: 32px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.link-simple span{
+    text-decoration: underline;
+}
+.link-simple i{
+    margin-left: 5px;
+}
+.template-section {
+    background-color: #bfedff;
+    padding: 45px 0;
+}
+.template-section .title-common{
+    color: #e0f6ff;
+}
+.template-section .title-common::after{
+    display: none;
+}
+.link-front {
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    padding-left: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.link-front i{
+    position: absolute;
+    left: 0;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.link-front.active{
+    color: #000;
+}
+.link-front.active i,.link-front:hover i{
+    display: block;
+}
+.link-front.active span,.link-front:hover span{
+    text-decoration: underline;
+}
+.serve-list li {
+    text-align: right;
+    margin-bottom: 15px;
+}

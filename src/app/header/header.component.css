@@ -1,0 +1,94 @@
+.navbar.bg-dark{
+    background-color: #000 !important;
+    padding: 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+}
+.navbar-brand img {
+    max-width: 110px;
+}
+.center-nav{
+    width: calc(100% - 283px);
+    text-align: center;
+    justify-content: center;
+}
+.nobility-nav .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: .75rem 1.75rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+.nobility-nav .navbar-nav .nav-item .nav-link.nav-link.bg-white:hover{
+    color: #fff !important;
+    background-color: #d86219 !important;
+}
+.navbar .lines {
+    width: 25px;
+    display: block;
+    position: relative;
+    height: 16px;
+    transition: all .5s ease;
+}
+.navbar  .navbar-toggler {
+    padding: 0;
+}
+.navbar-toggler:hover,
+.navbar-toggler:active,
+.navbar-toggler:focus{
+    outline: 0 none !important;
+}
+.navbar-toggler span {
+    height: 2px;
+    width: 100%;
+    background-color: #6c757d;
+    display: block;
+    margin-bottom: 5px;
+    transition: transform .5s ease;
+}
+.navbar-toggler[aria-expanded="true"] span {
+    position: absolute;
+}
+.navbar-toggler[aria-expanded="true"] span:first-child {
+    top: 7px;
+    transform: rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] span:nth-child(2) {
+    visibility: hidden;
+}
+.navbar-toggler[aria-expanded="true"] span:last-child {
+    width: 100%;
+    top: 7px;
+    transform: rotate(-45deg);
+}
+@media screen and (min-width: 1920px){
+.nobility-nav .navbar-nav .nav-item .nav-link {
+    font-size: 22px;
+    padding: .75rem 2.5rem;
+}
+.center-nav{
+    width: calc(100% - 395px);
+}
+}
+@media screen and (max-width: 991px){
+.center-nav{
+    width: 100%;
+}
+.navbar-brand img {
+    max-width: 80px;
+}
+.navbar.bg-dark {
+    padding: .5rem 1rem;
+}
+.nobility-nav .navbar-nav .nav-item .nav-link {
+    text-align: left;
+}
+.nobility-nav .navbar-nav .nav-item .nav-link.bg-white {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+}

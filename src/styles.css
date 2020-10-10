@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: auto;
+    max-width: 100%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a,a:hover,.btn{
+    text-decoration: none;
+    outline: 0 none;
+    box-shadow: unset;
+}
+img{
+    width: auto;
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.text-light{
+    color: #fff;
+}
+.wrapper {
+    padding-top: 119px;
+}
+.title-common {
+    margin: 0;
+    font-size: 90px;
+    color: #f1d4c1;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+}
+.title-dark {
+    font-size: 34px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 1920px){
+.container{
+    max-width: 1720px;
+}
+}
