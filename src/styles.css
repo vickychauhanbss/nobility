@@ -50,6 +50,8 @@ ul{
     font-weight: 600;
     text-transform: capitalize;
     margin-bottom: 30px;
+    position: relative;
+    padding-right: 45px;
 }
 @media screen and (min-width: 1920px){
 .container{

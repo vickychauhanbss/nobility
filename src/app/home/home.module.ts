@@ -6,10 +6,11 @@ import { HomeComponent } from './home.component';
 import { BannerComponent } from '../banner/banner.component';
 
 
+
 @NgModule({
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
   ],
   declarations: [HomeComponent, BannerComponent]
 })

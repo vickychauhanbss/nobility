@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { homeService } from '../../shared/services/home/home.service';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private homeService : homeService) { }
 
   ngOnInit(): void {
   }
 
   scroll() {
+    this.homeService.animationFxn('show')
     let el = document.getElementById('option-home');
     console.log(el);
       if(el){
