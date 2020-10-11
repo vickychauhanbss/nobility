@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, transition, useAnimation } from '@angular/animations';
-import { fadeInLeft } from 'ng-animate';
+import { fadeInLeft, fadeInRight } from 'ng-animate';
 import { homeService } from '../shared/services/home/home.service';
 
 @Component({
@@ -13,9 +13,14 @@ import { homeService } from '../shared/services/home/home.service';
    
       // Specify granular values for `translate` on axis Y during 'bounceInDown' 
       a: '-100px',
-      b: '0px',
-      c: '0px',
-      d: '0px',
+    }
+  }
+  ))]),
+    trigger('fadeInRight', [transition('* => *', useAnimation(fadeInRight, {params: {
+      timing: 1,
+  
+      // Specify granular values for `translate` on axis Y during 'bounceInDown' 
+      a: '100px',
     }
   }
   ))])
@@ -23,10 +28,11 @@ import { homeService } from '../shared/services/home/home.service';
 })
 export class HomeComponent implements OnInit {
   bounce: any;
+  fadeRight
   textArray : any = [];
   private subscription;
   interval: any
-  data: any = [{text : 'total design freedom'},{text : 'template'},{text:'blogs'},{text: 'features'}];
+  data: any = [{text : 'total design freedom'},{text : 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'}];
 
   constructor( private homeService: homeService) {
     this.showTextAnimation();
