@@ -148,6 +148,7 @@
 .meteor-section .inner-content {
     margin-bottom: 40px;
     max-width: 670px;
+    position: unset;
 }
 .meteor-section .inner-content ~ img {
     max-width: calc(100% - 265px);
