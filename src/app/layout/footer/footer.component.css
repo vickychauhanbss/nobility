@@ -1,5 +1,6 @@
 .footer-dark{
     background-color: #000;
+    padding: 30px 15px 25px;
 }
 .logo-content img {
     max-width: 160px;
@@ -23,8 +24,11 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    height: 18px;
+    width: 2px;
+    background-color: #fff;
 }
-.bottom-menu ul li a:last-child::before {
+.bottom-menu ul li:last-child a::before {
     display: none;
 }
 .logo-content p {

@@ -66,13 +66,13 @@
     transform: rotate(-45deg);
 }
 @media screen and (min-width: 1920px){
-.nobility-nav .navbar-nav .nav-item .nav-link {
+/* .nobility-nav .navbar-nav .nav-item .nav-link {
     font-size: 22px;
     padding: .75rem 2.5rem;
 }
 .center-nav{
     width: calc(100% - 395px);
-}
+} */
 }
 @media screen and (max-width: 991px){
 .center-nav{
