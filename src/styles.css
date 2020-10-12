@@ -35,6 +35,7 @@ ul{
 }
 .wrapper {
     padding-top: 119px;
+    overflow: hidden;
 }
 .title-common {
     margin: 0;

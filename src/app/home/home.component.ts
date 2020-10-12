@@ -7,19 +7,19 @@ import { homeService } from '../shared/services/home/home.service';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  animations: [
-    trigger('bounce', [transition('* => *', useAnimation(fadeInLeft, {params: {
-      timing: 1,
+  // animations: [
+  //   trigger('bounce', [transition('* => *', useAnimation(fadeInLeft, {params: {
+  //     timing: 1,
    
-      // Specify granular values for `translate` on axis Y during 'bounceInDown' 
-      a: '-100px',
-      b: '0px',
-      c: '0px',
-      d: '0px',
-    }
-  }
-  ))])
-  ],
+  //     // Specify granular values for `translate` on axis Y during 'bounceInDown' 
+  //     a: '-100px',
+  //     b: '0px',
+  //     c: '0px',
+  //     d: '0px',
+  //   }
+  // }
+  // ))])
+  // ],
 })
 export class HomeComponent implements OnInit {
   bounce: any;
