@@ -1,0 +1,158 @@
+.common-form {
+    width: 100%;
+    max-width: 540px;
+    background-color: #4d83ff;
+    padding: 20px;
+    margin: 40px auto;
+}
+.inner-content .common-form {
+    margin-top: 0;
+    padding: 4px;
+    margin-bottom: 0;
+}
+.inner-form {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1.25rem 1.25rem;
+}
+.common-form .form-group .form-control {
+    padding-right: 25px;
+    font-size: 14px;
+    border: 1px solid #ccc;    
+}
+.common-form .form-group .form-control:hover,.common-form .form-group .form-control:active,
+.common-form .form-group .form-control:focus{
+    box-shadow: unset;
+    outline: 0 none;
+}
+.common-form .form-group i {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+}
+.common-form .form-group label {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.landing-title {
+    font-size: 22px;
+    text-align: center;
+    color: #d86219;
+}
+.common-form .form-group {
+    position: relative;
+}
+.remember-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-btn{
+    background-color: #71ec33;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    padding: .5rem 1.75rem;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #71ec33;
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+}
+.common-btn {
+    padding: .5rem 1.75rem;
+    color: #fff;
+    max-width: 80%;
+    position: relative;
+}
+.common-btn:hover,.common-btn:active,.common-btn:focus{
+    outline: 0 none;
+    box-shadow: unset;
+}
+.common-btn i {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.auth-page .common-btn::before {
+    position: absolute;
+    content: "";
+    left: 23px;
+    height: 43px;
+    width: 2px;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.auth-page .common-btn.facebook-login::before{
+    left: 20px;
+}
+.auth-page .common-btn.google-login:hover::before{
+    background-color: #dc4e41;
+}
+.auth-page .common-btn.facebook-login:hover::before{
+    background-color: #3b5998;
+}
+.facebook-login{
+    background-color: #3b5998;
+    border: 2px solid #3b5998;
+}
+.google-login{
+    border: 2px solid #dc4e41;
+    background-color: #dc4e41;
+}
+.facebook-login:hover{
+    background-color: #fff;
+    color: #3b5998;
+}
+.google-login:hover{
+    background-color: #fff;
+    color: #dc4e41;
+}
+.login-btn:hover,.login-btn:active,.login-btn:focus{
+    color: #71ec33;
+    background-color: #fff;
+    outline: 0 none;
+    box-shadow: unset;
+}
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.common-form a:hover {
+    color: #d86219;
+}
+.goto {
+    margin: 10px 0;
+}
+.goto p{
+    margin: 0;
+}
+.option p {
+    text-align: center;
+    margin: 0;
+}
+.cross {
+    position: absolute;
+    right: -5px;
+    top: -6px;
+    background: #fff;
+    border-radius: 100%;
+    padding: 0px 6px;
+    color: #dc3545;
+    border: 1px solid;
+    cursor: pointer;
+}
+.form-btn {
+    display: flex;
+    justify-content: center;
+}
+.modal-dialog.auth-page {
+    min-width: 500px;
+}

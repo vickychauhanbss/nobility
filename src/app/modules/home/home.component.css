@@ -7,7 +7,9 @@
 }
 .inner-content {
     margin-top: 30px;
-    position: relative;
+    position: relative;    
+}
+.option-section .inner-content {
     padding-right: 45px;
 }
 .inner-content p {
@@ -43,6 +45,20 @@
 }
 .template-section .title-common{
     color: #e0f6ff;
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.meteor-section .title-common {
+    color: #e0f6ff;
+    background: -webkit-linear-gradient(45deg, #0a4d78, #dc3545 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.option-section .title-common {
+    background: -webkit-linear-gradient(45deg, #800b07, #5e7f9e 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .template-section .title-common::after{
     display: none;
@@ -235,6 +251,9 @@
 }
 .started-section .title-common {
     color: #df8147;
+    background: -webkit-linear-gradient(45deg, #0d1127, #362c80 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .started-section .inner-content h5 {
     color: #fff;

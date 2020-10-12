@@ -1,0 +1,57 @@
+<div mat-dialog-content >
+    <div class="modal-dialog auth-page" role="document">
+        <div class="modal-content inner-content">            
+            <div class="modal-body common-form">
+                <div class="login-popup inner-form">
+                    <div class="overlay"></div>
+                    <div class="form-top">
+                        <!-- <img src="assets/images/logo.png" /> -->
+                        <h3 class="landing-title">Create your Account</h3>
+                    </div>
+                    <form class="popup-feild">
+                        <span class="cross" (click)="dismissModal()">
+                            <i class="fa fa-times" aria-hidden="true" ></i>
+                        </span>
+                        <div class="">
+                            <div class="form-group mb-3">
+                                <label>Full name</label>
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input class="form-control" type="text" name="" placeholder="Enter name" />
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Email address</label>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <input class="form-control" type="text" name="" placeholder="Enter email" />
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Password</label>
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                <input class="form-control" type="email" name="" placeholder="Password" />
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Confirm Password</label>
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                <input class="form-control" type="email" name="" placeholder="Confirm password" />
+                            </div>
+                            <div class="form-btn">
+                                <button class="btn login-btn outline-btn">SignUp</button>
+                            </div>
+                            <div class="goto text-center">
+                                <p>Already have an account ?<a class="sign" (click)="openLoginPopup()">
+                                SignIn!
+                            </a></p>
+                            </div>
+                            <div class="option">
+                                <p>or</p>
+                            </div>
+                            <div class="social-login">
+                                <button class="common-btn facebook-login btn"><i class="fa fa-facebook" aria-hidden="true"></i>Signin via Facebook</button>
+                                <button class="common-btn google-login btn"><i class="fa fa-google" aria-hidden="true"></i>Signin via Google</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,4 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /* You can add global styles to this file, and also import other style files */
 html{
     font-size: 16px;
@@ -19,6 +20,10 @@ a,a:hover,.btn{
     text-decoration: none;
     outline: 0 none;
     box-shadow: unset;
+    cursor: pointer;
+}
+.btn{
+    transition: all .3s ease-in-out;
 }
 img{
     width: auto;
@@ -34,7 +39,7 @@ ul{
     color: #fff;
 }
 .wrapper {
-    padding-top: 119px;
+    padding-top: 90px;
     overflow: hidden;
 }
 .title-common {
@@ -88,6 +93,14 @@ ul{
     border-bottom: 3px solid #d86219;
     border-right: 5px solid #d86219;
 }
+.mat-dialog-container {
+    padding: 0 !important;
+    overflow: visible !important;
+    background: none !important;
+    box-shadow: none !important;
+
+}
+
 /* .anim-btn:hover{
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;

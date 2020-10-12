@@ -1,13 +1,13 @@
 .navbar.bg-dark{
     background-color: #000 !important;
-    padding: 1rem;
+    padding: .75rem 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
     top: 0;
 }
 .navbar-brand img {
-    max-width: 110px;
+    max-width: 80px;
 }
 .center-nav{
     width: 100%;
@@ -32,6 +32,9 @@
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
     position: relative;
+}
+.nobility-nav .navbar-nav.center-nav .nav-item .nav-link {
+    padding: .5rem .25rem;
 }
 .nobility-nav .navbar-nav .nav-item .dropdown-toggle::after{
     display: none;
@@ -71,7 +74,7 @@
 .navbar-toggler span {
     height: 2px;
     width: 100%;
-    background-color: #6c757d;
+    background-color: #fff;
     display: block;
     margin-bottom: 5px;
     transition: transform .5s ease;
