@@ -116,8 +116,31 @@
 .nobility-nav .navbar-nav .nav-item .nav-link {
     text-align: left;
 }
-.nobility-nav .navbar-nav .nav-item .nav-link.sign-up {
-    background-color: #000 !important;
-    color: #fff !important;
+}
+@media screen and (max-width: 540px){
+.nobility-nav .navbar-nav.login-nav .nav-item .nav-link {
+    padding: .75rem .5rem;
+    font-size: 14px;
+}
+.nobility-nav .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+}
+.navbar-brand img {
+    max-width: 60px;
+    margin-right: 0;
+}
+.navbar-nav.login-nav {
+    max-width: calc(100% - 118px);
+}
+.wrapper {
+    padding-top: 68px;
+}
+.navbar.bg-dark {
+    padding: .5rem 0rem;
+}
+}
+@media screen and (max-width: 360px){
+.navbar-nav.login-nav {
+    max-width: calc(100% - 108px);
 }
 }

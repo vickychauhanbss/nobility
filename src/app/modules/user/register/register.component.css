@@ -156,3 +156,13 @@
 .modal-dialog.auth-page {
     min-width: 500px;
 }
+@media screen and (max-width: 767px){
+.google-login {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 220px;
+}
+.social-login {
+    flex-direction: column;
+}
+}
