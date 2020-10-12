@@ -1,6 +1,7 @@
 .footer-dark{
     background-color: #000;
     padding: 30px 15px 25px;
+    position: relative;
 }
 .logo-content img {
     max-width: 160px;
@@ -12,6 +13,10 @@
     font-weight: 400;
     margin-bottom: 10px;
     display: inline-block;
+    transition: all .3s ease-in-out;
+}
+.footer-menu ul li a:hover {
+    color: #d28619;
 }
 .bottom-menu ul li a {
     position: relative;

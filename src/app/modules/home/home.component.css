@@ -1,5 +1,6 @@
 .common-section{
     margin-top: 55px;
+    position: relative;
 }
 .img-below {
     margin-top: 85px;
@@ -24,6 +25,10 @@
     color: #000000;
     font-weight: 600;
     text-transform: capitalize;
+    transition: all .3s ease-in-out;
+}
+.link-simple:hover{
+    color: #d86219;
 }
 .link-simple span{
     text-decoration: underline;
@@ -37,6 +42,7 @@
 }
 .template-section.common-section {
     padding: 45px 0 60px;
+    border-bottom: 5px solid #19b9f7;
 }
 .template-section .title-common{
     color: #e0f6ff;
@@ -71,7 +77,7 @@
     top: 50%;
     transform: translateY(-50%);
 }
-.link-front.active{
+.link-front.active,.link-front:hover{
     color: #000;
 }
 .link-front.active i,.link-front:hover i{
@@ -111,6 +117,7 @@
     position: absolute;
     bottom: 80px;
     right: 0;
+    z-index: 1;
 }
 .color-picker .color-common {
     display: inline-block;
@@ -181,10 +188,26 @@
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
     border: 2px solid #d86219;
+    position: relative;
 }
 .outline-btn:hover {
     color: #fff;
+    /* background-color: #d86219; */
+}
+.outline-btn:after{
+    display: block;
+    content: "";
+    width: 0%;
+    height: 100%;
     background-color: #d86219;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width .7s;
+}
+.outline-btn:hover:after{
+    width: 100%;
 }
 .feature-btn {
     margin: 30px 0 0px;
