@@ -4,6 +4,9 @@
 .img-below {
     margin-top: 85px;
 }
+.animated {
+    visibility: visible !important;
+}
 .inner-content {
     margin-top: 30px;
     position: relative;

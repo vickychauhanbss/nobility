@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
 
   scroll() {
     this.homeService.animationFxn('show')
-    let el = document.getElementById('option-home');
+    let el = document.getElementById('meteor-home');
     console.log(el);
       if(el){
         el.scrollIntoView({behavior:"smooth"});
