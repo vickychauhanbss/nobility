@@ -10,9 +10,15 @@
     max-width: 110px;
 }
 .center-nav{
-    width: calc(100% - 283px);
-    text-align: center;
-    justify-content: center;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+}
+.navbar-nav.login-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: calc(100% - 195px);
 }
 .nobility-nav .navbar-nav .nav-item .nav-link:hover{
     color: #d86219;
