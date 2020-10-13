@@ -8,7 +8,7 @@
                         <!-- <img src="assets/images/logo.png" /> -->
                         <h3 class="landing-title">Create your Account</h3>
                     </div>
-                    <form class="popup-feild">
+                    <form class="popup-feild" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
                         <span class="cross" (click)="dismissModal()">
                             <i class="fa fa-times" aria-hidden="true" ></i>
                         </span>
@@ -16,25 +16,55 @@
                             <div class="form-group mb-3">
                                 <label>Full name</label>
                                 <i class="fa fa-user" aria-hidden="true"></i>
-                                <input class="form-control" type="text" name="" placeholder="Enter name" />
+                                <input class="form-control" type="text" placeholder="Enter name" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }"/>
+
+                                <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                                    <div *ngIf="f.name.errors.required">Please enter your full name</div>
+
+                                    <div *ngIf="f.name.errors.maxlength">
+                                        Max limit is 15 characters
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group mb-3">
                                 <label>Email address</label>
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <input class="form-control" type="text" name="" placeholder="Enter email" />
+                            
+                                <input class="form-control" type="text"  placeholder="Enter email" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" />
+
+                                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                    <div *ngIf="f.email.errors.required">
+                                        Please enter the e-mail address
+                                    </div>
+
+                                    <div *ngIf="f.email.errors?.pattern">
+                                        Invalid e-mail address
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group mb-3">
                                 <label>Password</label>
                                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                                <input class="form-control" type="email" name="" placeholder="Password" />
+                                <input class="form-control" type="email" name="" placeholder="Password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"/>
+
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required">Password is required</div>
+                                    <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                                </div>
+            
                             </div>
                             <div class="form-group mb-3">
                                 <label>Confirm Password</label>
                                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                                <input class="form-control" type="email" name="" placeholder="Confirm password" />
+                                <input class="form-control" type="email" name="" placeholder="Confirm password" formControlName="confirmPassword" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+
+                                <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                                    <div *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
+                                    <div *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
+                                </div>
                             </div>
                             <div class="form-btn">
-                                <button class="btn login-btn outline-btn">SignUp</button>
+                                <button class="btn login-btn outline-btn" type="submit">SignUp</button>
                             </div>
                             <div class="goto text-center">
                                 <p>Already have an account ?<a class="sign" (click)="openLoginPopup()">

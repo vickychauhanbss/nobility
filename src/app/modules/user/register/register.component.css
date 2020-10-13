@@ -156,6 +156,9 @@
 .modal-dialog.auth-page {
     min-width: 500px;
 }
+.invalid-feedback{
+    position: absolute;
+}
 @media screen and (max-width: 767px){
 .google-login {
     margin-top: 10px;

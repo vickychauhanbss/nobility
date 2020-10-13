@@ -4,18 +4,15 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-// import { HomeComponent } from './home/home.component';
 import { LayoutModule } from './layout/layout.module';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent
-    // HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +20,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]

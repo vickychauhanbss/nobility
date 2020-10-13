@@ -38,7 +38,9 @@ private subscriptionRegsiter;
 
   openLoginPopup(){
     const dialogRef = this.dialog.open(LoginComponent, {
-      disableClose: true
+      disableClose: true,
+      autoFocus: false,
+      maxHeight: '90vh' //you can adjust the value as per your view
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -49,7 +51,9 @@ private subscriptionRegsiter;
 
   openRegisterPopup(){
     const dialogRef = this.dialog.open(RegisterComponent,{
-      disableClose: true
+      disableClose: true,
+      autoFocus: false,
+      maxHeight: '90vh' //you can adjust the value as per your view
     });
 
     dialogRef.afterClosed().subscribe(result => {

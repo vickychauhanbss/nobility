@@ -8,7 +8,7 @@
                         <!-- <img src="assets/images/logo.png" /> -->
                         <h3 class="landing-title">Login to your Account</h3>
                     </div>
-                    <form class="popup-feild">
+                    <form class="popup-feild" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                         <span class="cross" (click)="dismissModal()">
                             <i class="fa fa-times" aria-hidden="true" ></i>
                         </span>
@@ -16,12 +16,26 @@
                             <div class="form-group mb-3">
                                 <label>Email adress</label>
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <input class="form-control" type="text" name="" placeholder="Enter email" />
+                                <input class="form-control" type="text" name="" placeholder="Enter email" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$"/>
+
+                                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                    <div *ngIf="f.email.errors.required">
+                                        Please enter the e-mail address
+                                    </div>
+
+                                    <div *ngIf="f.email.errors?.pattern">
+                                        Invalid e-mail address
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group mb-3">
                                 <label>Password</label>
                                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>                                  
-                                <input class="form-control" type="email" name="" placeholder="Password" />
+                                <input class="form-control" type="password" name="" placeholder="Password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"/>
+
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required">Password is required</div>
+                                </div>
                             </div>
                             <div class="remember-section">
                                 <div class="form-group mb-3">
