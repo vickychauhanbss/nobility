@@ -17,7 +17,7 @@
     padding: 1.25rem 1.25rem;
 }
 .common-form .form-group .form-control {
-    padding-right: 25px;
+    padding-left: 25px;
     font-size: 14px;
     border: 1px solid #ccc;    
 }
@@ -26,9 +26,15 @@
     box-shadow: unset;
     outline: 0 none;
 }
+.common-form .form-group .form-control.form-control.is-invalid{
+    border-color: #dc3545;
+}
+.invalid-feedback {
+    top: 95%;
+}
 .common-form .form-group i {
     position: absolute;
-    right: 10px;
+    left: 6px;
     bottom: 12px;
 }
 .common-form .form-group label {
@@ -167,5 +173,31 @@
 }
 .social-login {
     flex-direction: column;
+}
+}
+@media screen and (max-width: 600px){
+.common-form{
+    max-width: 100%;
+}
+.modal-dialog.auth-page {
+    min-width: 100%;
+    margin: 0;
+}
+.inner-form {
+    padding: .75rem .5rem;
+}
+.common-btn {
+    font-size: 14px;
+    width: 100%;
+    max-width: 220px;
+}
+}
+@media screen and (max-width: 320px){
+.remember-section * {
+    font-size: 14px;
+}
+.goto p {
+    margin: 0;
+    font-size: 14px;
 }
 }
