@@ -1,0 +1,39 @@
+.accordion-section .card {
+    border-color: #0c84b4;
+    border-radius: 0;
+}
+.accordion-section .card-header {
+    border-bottom-color: #0c84b4;
+    padding: 0;
+}
+.accordion-section .card-header .card-link {
+    padding: .75rem 1.25rem;
+    width: 100%;
+    color: #0c84b4;
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    background-color: #bfedff;
+}
+.accordion-section .card-header .card-link i{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    font-size: 30px;
+    transform: translateY(-50%);
+    font-weight: 800;
+}
+.faq-section .title-common{
+    padding: 35px 0;
+}
+.faq-section .card-body {
+    background-color: #f2fbff;
+}
+.accordion-section {
+    margin-bottom: 60px;
+}
+@media screen and (max-width: 767px){
+.accordion-section {
+    margin-bottom: 30px;
+}
+}

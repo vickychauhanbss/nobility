@@ -66,3 +66,9 @@
     font-size: 18px;
 }
 }
+@media screen and (max-width: 375px){
+.bottom-menu ul li a {
+    padding: 0 .5rem;
+    font-size: 16px;
+}
+}
