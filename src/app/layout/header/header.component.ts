@@ -3,7 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from '../../modules/user/login/login.component';
 import { RegisterComponent } from '../../modules/user/register/register.component';
 import { homeService } from '../../shared/services/home/home.service';
-
+import { Router } from '@angular/router';
+import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,8 @@ import { homeService } from '../../shared/services/home/home.service';
 export class HeaderComponent implements OnInit {
 private subscriptionLogin;
 private subscriptionRegsiter;
-  constructor(public dialog: MatDialog, public homeService: homeService) {
+private expendToggle : boolean;
+  constructor(public dialog: MatDialog, public homeService: homeService, private _router: Router) {
 
     this.subscriptionLogin = this.homeService.showLoginPopup.subscribe((bit)=>{
       this.openLoginPopup();
@@ -26,6 +28,7 @@ private subscriptionRegsiter;
    }
 
   ngOnInit(): void {
+    this.expendToggle = false
   }
 
   scroll() {
@@ -59,7 +62,15 @@ private subscriptionRegsiter;
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
+  }
 
+  goToPages(route){
+    var element = document.getElementById("navbarCollapse");
+    if(element){
+      element.classList.remove("show");
+    }
+    document.getElementById("p2").setAttribute('aria-expanded', 'false');
+    this._router.navigate([route])
   }
 
   ngOnDestroy() {
